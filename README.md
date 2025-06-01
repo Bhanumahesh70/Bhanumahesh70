@@ -24,7 +24,7 @@ I'm a **Full Stack Java Developer** based in **Chicago, IL** with 2 years of han
 
 - 🔭 I’m currently working on **Spring Boot microservices** and **React-based frontends**.
 - 📚 I'm currently learning **Advanced AWS Architecture** and **Kafka streaming patterns**.
-- ⚡ In my free time, I love exploring ** Web and cloud technologies**.
+- ⚡ In my free time, I love exploring **Web and cloud technologies**.
 
 ---
 
