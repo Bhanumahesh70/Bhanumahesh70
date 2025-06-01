@@ -85,6 +85,9 @@ _July 2021 – December 2021 (6 months)_
 - Implemented role-based access control with JWT.
 - Built modules for book borrowing, fine tracking, reservations, and dashboards.
 - Designed and tested APIs with Postman.
+  
+**Technologies:** Java 23, Spring Boot 3.4.0, Spring Security, React 18, TypeScript, Vite, Spring Data JPA, Hibernate, MySQL, Maven, JUnit 5, Hibernate Validator, RESTful APIs, React Router v6, Axios, Context API, JWT Auth, CSS Modules, PostgreSQL, ESLint, Prettier, Git, GitHub
+
 
 
 ### 🍹 Beverage Inventory Management System  
@@ -95,6 +98,10 @@ _July 2021 – December 2021 (6 months)_
 - Built CRUD for beverage management and order lifecycle.
 - Integrated error handling with FacesContext.
 - Conducted unit and integration testing with JUnit 5 and Hibernate Validator.
+
+**Technologies:** Java 11, Jakarta EE 10, JSF, Payara Server 5.x, MySQL, Maven, Hibernate Validator, JUnit 5, EclipseLink JPA, SQL, FacesContext (JSF), MVC Pattern, REST APIs
+
+
 
 ---
 
