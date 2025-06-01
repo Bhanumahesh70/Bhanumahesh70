@@ -20,11 +20,11 @@
 
 ## 👩‍💻 About Me
 
-I'm a **Full Stack Java Developer** based in **Charlotte, NC** with 2 years of hands-on experience building scalable, cloud-based, and high-performance web applications and microservices.
+I'm a **Full Stack Java Developer** based in **Chicago, IL** with 2 years of hands-on experience building scalable, cloud-based, and high-performance web applications and microservices.
 
 - 🔭 I’m currently working on **Spring Boot microservices** and **React-based frontends**.
 - 📚 I'm currently learning **Advanced AWS Architecture** and **Kafka streaming patterns**.
-- ⚡ In my free time, I love exploring **cloud technologies** and contributing to **open-source projects**.
+- ⚡ In my free time, I love exploring ** Web and cloud technologies**.
 
 ---
 
