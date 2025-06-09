@@ -101,6 +101,33 @@ _July 2021 – December 2021 (6 months)_
 
 **Technologies:** Java 11, Jakarta EE 10, JSF, Payara Server 5.x, MySQL, Maven, Hibernate Validator, JUnit 5, EclipseLink JPA, SQL, FacesContext (JSF), MVC Pattern, REST APIs
 
+# 📚 AI Book Summary App 
+
+## ✅ Core Project Contribution
+
+- **Designed and developed** an Android application enabling users to **search**, **explore**, and **summarize books** using AI, resulting in a fully functional app with **1-click Google Sign-In** and dynamic AI content generation.
+
+- **Integrated Gemini AI API** to generate **real-time, contextual book summaries**, enhancing the user experience and demonstrating **advanced API integration** and **prompt engineering** skills.
+
+- **Implemented user authentication** and **per-user data persistence** using **Firebase Authentication** and **Realtime Database** — achieving **secure user data management** and **personalized experience**.
+
+- **Built interactive UI** with **Material Design** components: **Top AppBar**, **Bottom Navigation**, **Drawer Menu**, **SearchView** — improving **navigation efficiency** and **user engagement**.
+
+- **Integrated Google Books API** to dynamically fetch and display **book metadata** (title, author, categories, publisher, description, preview links), resulting in an **always up-to-date book catalog**.
+
+- **Designed MVVM architecture** using **ViewModelProvider** and **Repository pattern** — improving code **scalability**, **testability**, and **maintainability**.
+
+- **Enabled offline-friendly interactions** by leveraging **Firebase Database caching** and **Glide image caching** — improving app **responsiveness** and **usability**.
+
+- **Achieved 100% functional coverage** of core user journeys:
+
+```
+- Google Sign-In → Book Search → AI Summary → Save Book → View Saved → Logout.
+```
+
+- **Built and deployed app** using latest **Android SDK** (target SDK 35), **Java 11**, and modern dependency libraries (**Retrofit**, **Glide**, **Firebase**, **Google Identity**).
+
+---
 
 
 ---
