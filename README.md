@@ -101,7 +101,7 @@ _July 2021 – December 2021 (6 months)_
 
 **Technologies:** Java 11, Jakarta EE 10, JSF, Payara Server 5.x, MySQL, Maven, Hibernate Validator, JUnit 5, EclipseLink JPA, SQL, FacesContext (JSF), MVC Pattern, REST APIs
 
-###  📚 AI Book Summary App 
+###  📚 AI Book Summary App - Android App
 
 - **Designed and developed** an Android application enabling users to **search**, **explore**, and **summarize books** using AI, resulting in a fully functional app with **1-click Google Sign-In** and dynamic AI content generation.
 
@@ -124,6 +124,9 @@ _July 2021 – December 2021 (6 months)_
 ```
 
 - **Built and deployed app** using latest **Android SDK** (target SDK 35), **Java 11**, and modern dependency libraries (**Retrofit**, **Glide**, **Firebase**, **Google Identity**).
+
+
+**Technologies:** Java, Android SDK, MVVM, Google Books API, Gemini AI API, Firebase (Auth + Realtime DB), Retrofit, Glide, Material Design, RecyclerView, Google Identity.
 
 ---
 
