@@ -103,8 +103,6 @@ _July 2021 – December 2021 (6 months)_
 
 # 📚 AI Book Summary App 
 
-## ✅ Core Project Contribution
-
 - **Designed and developed** an Android application enabling users to **search**, **explore**, and **summarize books** using AI, resulting in a fully functional app with **1-click Google Sign-In** and dynamic AI content generation.
 
 - **Integrated Gemini AI API** to generate **real-time, contextual book summaries**, enhancing the user experience and demonstrating **advanced API integration** and **prompt engineering** skills.
