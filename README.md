@@ -77,31 +77,158 @@ _July 2021 – December 2021 (6 months)_
 
 ## 📂 Project Experience
 
-### [📚 EBook Management System](`https://github.com/Bhanumahesh70/AIBookSummary_Android_App`)  
-**React, TypeScript, Spring Boot, JWT, MySQL**
-
-- Developed responsive frontend with React 18, TypeScript, Vite.
-- Integrated with Spring Boot REST APIs.
-- Implemented role-based access control with JWT.
-- Built modules for book borrowing, fine tracking, reservations, and dashboards.
-- Designed and tested APIs with Postman.
-  
-**Technologies:** Java 23, Spring Boot 3.4.0, Spring Security, React 18, TypeScript, Vite, Spring Data JPA, Hibernate, MySQL, Maven, JUnit 5, Hibernate Validator, RESTful APIs, React Router v6, Axios, Context API, JWT Auth, CSS Modules, PostgreSQL, ESLint, Prettier, Git, GitHub
+### [📚 Ebook Management Backend (Spring Boot)](https://github.com/Bhanumahesh70/EBook_Library_Backend)
 
 
+- **Designed and implemented** a complete **backend system** for **Ebook Management**, providing **user authentication, role-based access control, book borrowing, reservation, and fine management** features.
+- **Developed robust JWT-based authentication** using **Spring Security**, including **secure token generation, validation, role-based authorization,** and **encrypted password storage** with **BCrypt**.
+- **Designed a rich domain model** with complex entity relationships (**One-to-Many**, **Many-to-Many**, **One-to-One**) and **bidirectional mappings** for **Books, Authors, Users, Reservations, and Fines**.
+- **Implemented comprehensive domain validation** using **Hibernate Validator** and **jakarta.validation annotations** to enforce **data integrity**.
+- **Built RESTful APIs** for **Users, Authors, Books, Categories, Publishers, Borrowing, Reservations, and Fines**, ensuring a **clean, scalable, and extensible backend architecture**.
+- **Engineered secure API access** with **fine-grained role-based permissions** (`ROLE_USER`, `ROLE_ADMIN`), **stateless authentication**, and **CORS configuration** for frontend compatibility.
+- **Designed a modular architecture** using **Spring Boot 3.4.0**, **Spring Security**, **Spring Data JPA**, **Hibernate**, and **DTO-based data transfer patterns**.
+- **Implemented full business workflows** for:
 
-### 🍹 Beverage Inventory Management System  
+  * **Book borrowing & returning**
+  * **Reservations & cancellation**
+  * **Fine calculation & tracking** (with automated **startup fine update job**)
+- **Achieved high code quality** with **unit and integration testing** (**JUnit**, **Hibernate Validator**), ensuring **stability of data validation, repository logic, and business services**.
+- **Enabled dynamic role-based API access** with:
+
+  * Custom `JWTAuthenticationFilter`
+  * Custom `SecurityConfig`
+  * Declarative method security with `@EnableMethodSecurity` and `@PreAuthorize`
+- **Automated database schema generation** with **Spring JPA & MySQL**, and used **DTOs** and **mapping layers** to enforce **separation of concerns**.
+- **Documented all backend components** in a **professional, modular structure** (`DOMAIN.md`, `SECURITY.md`, `CONTROLLER.md`, `SERVICE.md`, `TESTING.md`, etc.) for better **team onboarding and maintainability**.
+
+
+#### 🔐 Key Functional Coverage (100% implemented):
+
+* **JWT-based User Authentication**
+* **Role-based Authorization**
+* **Manage Users, Books, Authors, Categories, Publishers**
+* **Borrowing, Reservations, and Fines workflows**
+* **REST APIs for all entities**
+* **Automated fine update job**
+* **Robust Testing with JUnit**
+* **Secure password storage (BCrypt)**
+* **Custom JWT Security Filters & Claims**
+* **Stateless architecture with CORS and CSRF handling**
+
+#### 💡 Technical Achievements:
+
+* Implemented **100% RESTful backend** for integration with **React-based frontend**.
+* Achieved **fully stateless JWT authentication** with **Spring Security**.
+* Designed for **scalability** and **production-readiness** 
+* Maintained **professional project documentation** for all major components.
+
+**Technologies:** Java 23, Spring Boot 3.4.0, Spring Security, Spring Data JPA, Hibernate, MySQL, Maven, JUnit 5, Hibernate Validator, RESTful APIs,  JWT Auth, Git, GitHub
+
+---
+### [📚 Ebook Management Frontend (React + TypeScript + Vite)](https://github.com/Bhanumahesh70/EBook_Library_FrontEnd)
+
+
+- **Designed and developed** a full-featured **frontend application** for **Ebook Management System** using **React 18**, **TypeScript**, and **Vite**, enabling seamless interaction with a **Spring Boot backend**.
+
+- **Implemented secure JWT-based authentication** and **role-based access control** (Admin/User) using **Context API** and protected routes, ensuring **fine-grained user authorization** and **secure frontend workflows**.
+
+- **Built dynamic UI components** for **managing books, authors, categories, users, reservations, fines**, and **publishers** with reusable abstract components (`EntityForm.tsx`, `EntityTable.tsx`, `EntityBooks.tsx`).
+
+- **Developed global state management** using **React Context** for authentication, global search, and user-specific dashboards, ensuring consistent UX across the application.
+
+- **Implemented global search, filtering, and sorting** with **custom reusable hooks** (`useFilterSort.ts`) and **GlobalSearchContext** across all entity management pages.
+
+- **Created a scalable and modular architecture**, with:
+
+  * Generic **EntityService<T>** for consistent and DRY API interaction
+  * Reusable **abstract form components** and **entity table components**
+  * Centralized **error handling** and **feedback modals**
+
+- **Engineered responsive UI** with **custom form components**, optimized for both **Admin** and **User** roles:
+
+  * Admin can manage all entities
+  * Users can manage their own books, reservations, and fines
+
+- **Integrated seamless interaction** with backend API using **Axios**, with centralized **JWT token injection** and secure session validation.
+
+- **Optimized routing and navigation** using **React Router v6** with **ProtectedRoute** components for enforcing **role-based route protection**.
+
+- **Documented frontend architecture** in professional documentation (`CODE_OVERVIEW.md`, `UI_OVERVIEW.md`), improving maintainability and developer onboarding.
+
+
+
+#### 🌟 Key Functional Coverage (100% implemented):
+
+* **JWT-based Authentication**
+* **Role-based Routing & Access Control**
+* **Global Search & Filtering**
+* **Manage Books, Authors, Users, Categories, Fines, Reservations, Publishers**
+* **Borrow & Return Books**
+* **Fine calculation and tracking**
+* **Reusable abstract components** for forms and tables
+* **Fully Responsive UI**
+* **Secure API interaction with Axios**
+* **Global State Management with Context API**
+* **Protected Routes with React Router v6**
+
+
+
+#### 💡 Technical Achievements:
+
+* Built a **highly reusable frontend architecture** using **React + TypeScript + Vite**.
+* Designed **generic EntityService** to standardize CRUD and API interactions.
+* Implemented **dynamic global search & filtering** with centralized hooks.
+* Ensured **secure JWT integration** with backend and automatic token management.
+* Achieved **responsive and scalable UI design** optimized for Admin and User workflows.
+* Maintained **professional project documentation** for easier maintenance and team scaling.
+
+**Technologies:** React 18, TypeScript, Vite, RESTful APIs, React Router v6, Axios, Context API, JWT Auth, CSS Modules, ESLint, Prettier, Git, GitHub
+
+---
+
+### [🍹 Beverage Inventory Management System](https://github.com/Bhanumahesh70/Beverage_Inventory_Management_App)
+
 **Java, Jakarta EE, JSF, Payara Server, MySQL**
 
-- Designed backend using Jakarta EE 10, Java 11, and JSF.
-- Implemented multi-role access control.
-- Built CRUD for beverage management and order lifecycle.
-- Integrated error handling with FacesContext.
-- Conducted unit and integration testing with JUnit 5 and Hibernate Validator.
+- **Designed and developed** a **full-stack enterprise web application** to streamline the **beverage industry’s order placement and fulfillment process**, improving operational efficiency for both **suppliers** and **customers**.
+
+- **Implemented multi-role access control** (Admin, Supplier, Customer), enabling **secure, role-based workflows** and **user-specific features** for each type of stakeholder.
+
+- **Integrated robust beverage inventory management** for suppliers, allowing real-time **add/update/delete of beverages**, with **data integrity safeguards** (soft delete with history tracking).
+
+- **Developed a complete order management lifecycle**: order creation, status tracking (Placed, Cancelled, Completed), with transactional rules and state-dependent actions to ensure business consistency.
+
+- **Engineered advanced error handling and user feedback** using **JSF FacesContext** and comprehensive **logging**, enhancing application stability and providing intuitive error messages to users.
+
+- **Built dynamic user interfaces** with **JSF**, **HTML5**, and **CSS3**, enabling responsive and intuitive user experiences across **Admin Portal**, **Supplier Portal**, and **Customer Portal**.
+
+- **Achieved seamless integration** of **MySQL database** with **Jakarta EE / EclipseLink JPA**, ensuring **transactional consistency** and **historical data retention**.
+
+- **Streamlined deployment pipeline** using **Maven** and **Payara Server**, automating WAR packaging and simplifying local and production deployment workflows.
+
+- **Enhanced system reliability** with **JUnit testing** and **validation frameworks** (Hibernate Validator), delivering a robust and maintainable codebase.
+
+- **Documented complete user journeys** and **interaction flows** for Admin, Supplier, and Customer roles, improving onboarding for new users and supporting future feature expansion.
+
+
+#### Key Functional Coverage (100% implemented):
+
+* Admin: User approval, supplier management, application oversight.
+* Supplier: Beverage inventory management, order tracking and fulfillment.
+* Customer: Browse beverages, place orders, track/cancel orders.
+* Secure, role-based navigation and access control.
+
+
+#### Technical Achievements:
+* Implemented **soft delete** and **audit-friendly data retention**.
+* Designed system for future **microservices architecture** and **Docker-based deployment**.
+
 
 **Technologies:** Java 11, Jakarta EE 10, JSF, Payara Server 5.x, MySQL, Maven, Hibernate Validator, JUnit 5, EclipseLink JPA, SQL, FacesContext (JSF), MVC Pattern, REST APIs
 
-###  📚 AI Book Summary App - Android App
+---
+
+### [📚 AI Book Summary App - Android App](https://github.com/Bhanumahesh70/AIBookSummary_Android_App)
 
 - **Designed and developed** an Android application enabling users to **search**, **explore**, and **summarize books** using AI, resulting in a fully functional app with **1-click Google Sign-In** and dynamic AI content generation.
 
